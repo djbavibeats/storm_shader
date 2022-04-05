@@ -85,7 +85,6 @@ gui.add(waterMaterial.uniforms.uSmallWavesFrequency, 'value').min(0).max(30).ste
 gui.add(waterMaterial.uniforms.uSmallWavesSpeed, 'value').min(0).max(4).step(0.001).name('uSmallWavesSpeed');
 gui.add(waterMaterial.uniforms.uSmallWavesIterations, 'value').min(0).max(8).step(1.0).name('uSmallWavesIterations');
 
-console.log(scene.fog)
 gui.addColor(debugObject, 'fogColor').name('fogColor').onChange(() => { scene.fog.color = new THREE.Color(debugObject.fogColor) })
 gui.addColor(debugObject, 'clearColor').name('clearColor').onChange(() => { renderer.setClearColor(debugObject.clearColor) })
 
@@ -141,7 +140,7 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-
+renderer.setClearColor('#7b88f9')
 /**
  * Animate
  */
