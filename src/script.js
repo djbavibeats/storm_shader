@@ -10,6 +10,7 @@ import waterFragmentShader from './shaders/water/fragment.glsl'
  */
 // Debug
 const gui = new dat.GUI({ width: 340 })
+gui.open(false)
 const debugObject = {}
 
 // Canvas
