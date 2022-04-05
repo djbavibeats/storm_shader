@@ -18,7 +18,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
-scene.fog = new THREE.Fog('#261891', 0, 5);
+scene.fog = new THREE.Fog('#7b88f9', 0, 5);
 
 var light = new THREE.AmbientLight(0xff0000); // soft white light
 scene.add(light);
@@ -35,10 +35,10 @@ const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
 const waterGeometry = new THREE.PlaneGeometry(20, 20, 512, 512)
 
 // Color
-debugObject.depthColor = '#186691'
-debugObject.surfaceColor = '#9bd8ff'
-debugObject.fogColor = '#1c0049'
-debugObject.clearColor = '#020627'
+debugObject.depthColor = '#8fa9b7'
+debugObject.surfaceColor = '#0470b4'
+debugObject.fogColor = '#7b88f9'
+debugObject.clearColor = '#7b88f9'
 
 // Material
 const waterMaterial = new THREE.ShaderMaterial({
